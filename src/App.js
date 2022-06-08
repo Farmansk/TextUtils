@@ -47,7 +47,7 @@ function App() {
           <Route exact path="/about">
             <About mode={mode} />
           </Route>
-          <Route exact path="/home">
+          <Route exact path="/">
             <TextForm showAlert={showAlert} heading="Try TextUtils - word counter, character counter, remove extra spaces" mode={mode}/>
           </Route>
     </div>
