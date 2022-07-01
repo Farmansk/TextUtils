@@ -37,12 +37,12 @@ export default function TextForm(props) {
         props.showAlert("Extra spaces removed!", "success");
     }
 
-    const [text, setText] = useState(''); 
+    const [text, setText] = useState('');
     // text = "new text"; // Wrong way to change the state
     // setText("new text"); // Correct way to change the state
     return (
         <>
-        <div className="container" style={{color: props.mode==='dark'?'white':'#042743'}}> 
+        <div className="container" style={{color: props.mode==='dark'?'white':'#042743'}}>
             <h1 className='mb-4'>{props.heading}</h1>
             <div className="mb-3"> 
             <textarea className="form-control" value={text} onChange={handleOnChange} style={{backgroundColor: props.mode==='dark'?'#13466e':'white', color: props.mode==='dark'?'white':'#042743'}} id="myBox" rows="8"></textarea>
